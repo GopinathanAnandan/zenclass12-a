@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.heading {
+    text-align: center;
+    padding: 10px;
+}
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    background-color: rgb(241, 241, 241);
+    border-radius: 5px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.container img {
+    width: 450px;
+    height: 450px;
+    margin: 20px;
+}
+
+.container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="number"],
+.container select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+.container select {
+    padding: 5px 10px;
+}
+
+.container button {
+    padding: 10px 20px;
+    background-color: rgb(34, 32, 196);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: rgb(61, 60, 60);
+}
+
+@media all and (max-width:1000px) {
+    .container img {
+        width: 250px;
+        height: 350px;
+        margin: 25px;
+    }
+}
+
+@media all and (max-width:770px) {
+
+    .container img {
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 80%;
+        background-color: coral;
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .heading {
+        color: coral;
+        font-weight: bolder;
+        margin: 10px;
+    }
+  
+}
